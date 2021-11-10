@@ -3,7 +3,7 @@ import Input from './input';
 // import Output from './output';
 import {useEffect, useState} from 'react'
 
-async function fetchAPI() {
+function fetchAPI() {
   return new Promise(resolve => {
     const res = fetch('https://random-flat-colors.vercel.app/api/random?count=6')
     res.then(data => {
