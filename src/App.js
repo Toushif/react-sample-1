@@ -38,7 +38,7 @@ function App() {
         setColorData(data.colors)
       }
     };
-    xmlResponse.responseType = 'json' //if you dont use this then xmlResponse.response inside onload will be string by default whicih you will need to parse using JSON.parse(xmlResponse.response)
+    xmlResponse.responseType = 'json' //if you don't use this then xmlResponse.response inside onload will be string by default which you will need to parse using JSON.parse(xmlResponse.response).
     xmlResponse.send()
   }, [])
 
